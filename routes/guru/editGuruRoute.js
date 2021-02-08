@@ -8,7 +8,7 @@ app.patch('/api/guru', async (req, res, next) => {
     const body = req.body
     const controller = new Controller('guru')
     const result = await controller.edit(id, body)
-    res.send("")
+    res.send(result[0])
 })
 
 module.exports = app

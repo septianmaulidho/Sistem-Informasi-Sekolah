@@ -56,7 +56,8 @@ class Controller {
             .catch(err => {
                 throw err
             })
-        return results // result == 1
+        const edited = this.get({ id })
+        return edited // result == 1
         // return body
     }
 
